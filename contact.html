@@ -127,37 +127,41 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">.</p>
-                    <form>
+                    <p class="mb-4">Compila il modulo e ti risponderemo il prima possibile.</p>
+                    <form id="contactForm" novalidate>
                         <div class="row g-3">
+                            <!-- Honeypot anti-spam (nascosto) -->
+                            <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                     <label for="name">Il tuo nome e cognome</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                     <label for="email">La tua email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                     <label for="subject">Oggetto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
+                                        style="height: 100px" required></textarea>
                                     <label for="message">Messaggio</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Invia Messaggio</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" id="submitBtn">Invia Messaggio</button>
                             </div>
+                            <div class="col-12" id="formFeedback" style="display:none;"></div>
                         </div>
                     </form>
                 </div>
@@ -248,6 +252,46 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Contact Form -->
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var btn      = document.getElementById('submitBtn');
+        var feedback = document.getElementById('formFeedback');
+        var form     = this;
+
+        btn.disabled = true;
+        btn.textContent = 'Invio in corso...';
+        feedback.style.display = 'none';
+
+        var data = new FormData(form);
+
+        fetch('send_mail.php', { method: 'POST', body: data })
+            .then(function(r) { return r.json(); })
+            .then(function(res) {
+                if (res.success) {
+                    feedback.className = 'col-12 alert alert-success';
+                    feedback.textContent = res.message;
+                    form.reset();
+                } else {
+                    feedback.className = 'col-12 alert alert-danger';
+                    feedback.textContent = res.message;
+                    btn.disabled = false;
+                    btn.textContent = 'Invia Messaggio';
+                }
+                feedback.style.display = 'block';
+            })
+            .catch(function() {
+                feedback.className = 'col-12 alert alert-danger';
+                feedback.textContent = "Errore di connessione. Riprova più tardi.";
+                feedback.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Invia Messaggio';
+            });
+    });
+    </script>
 </body>
 
 </html>
