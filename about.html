@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 
 <head>
@@ -63,6 +63,7 @@
                 <a href="about.html" class="nav-item nav-link active">Il nostro Team</a>
                 <a href="feature.html" class="nav-item nav-link">Info</a>
                 <a href="contact.html" class="nav-item nav-link">Contatti</a>
+                <a href="lavora-con-noi.html" class="nav-item nav-link">Lavora con Noi</a>
             </div>
         </div>
     </nav>
@@ -120,8 +121,12 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light p-3 me-3" style="min-width:80px;">
-                            <i class="fa fa-certificate text-primary fa-2x"></i>
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-4 border-primary rounded-circle me-3" style="width:80px;height:80px;min-width:80px;">
+                            <div class="text-center">
+                                <div class="text-primary fw-bold" style="font-size:0.5rem;letter-spacing:1px;">UNI EN</div>
+                                <div class="text-primary fw-bold" style="font-size:0.85rem;line-height:1.1;">ISO 9001</div>
+                                <div class="text-primary fw-bold" style="font-size:0.5rem;letter-spacing:1px;">2015</div>
+                            </div>
                         </div>
                         <div>
                             <strong>Certificato ISO 9001:2015</strong><br>
@@ -144,23 +149,22 @@
                 <h1 class="display-5 mb-4">Professionisti con decenni di esperienza</h1>
             </div>
 
-            <!-- Soci principali con foto e CV -->
+            <!-- Soci principali con foto e bio accordion -->
             <div class="row g-4 mb-5">
 
                 <!-- Luciano Taranto -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="img/luciano_taranto.png" class="card-img-top" alt="Ing. Luciano Taranto" style="height:260px;object-fit:cover;">
+                        <img src="photo/luciano.jpg" class="card-img-top" alt="Ing. Luciano Taranto" style="width:100%;aspect-ratio:1/1;object-fit:cover;">
                         <div class="card-body text-center p-4">
                             <h4 class="mt-2 mb-1">Ing. Luciano Taranto</h4>
                             <p class="text-primary mb-3"><strong>Ingegnere Civile Edile — Fondatore</strong></p>
-                            <p class="text-muted small mb-3">Laureato in Ingegneria Civile Edile a Palermo nel 1985.
-                                Oltre 40 anni di attività professionale. Consigliere dell'Ordine degli Ingegneri di Messina,
-                                già Consulente dell'Assemblea Regionale Siciliana e Amministratore Delegato di ATO ME 3 S.p.A.
-                                Iscritto all'Albo n.1238.</p>
-                            <a href="docs/cv/luciano_taranto.pdf" class="btn btn-outline-primary btn-sm" download>
-                                <i class="fa fa-download me-2"></i>Scarica CV completo
-                            </a>
+                            <button class="btn btn-outline-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#bio-luciano" aria-expanded="false">
+                                <i class="fa fa-user me-2"></i>Curriculum
+                            </button>
+                            <div class="collapse text-start mt-2" id="bio-luciano">
+                                <p class="text-muted small">Nato a Giarre (CT) nel 1959, laureato in Ingegneria Civile Edile nel 1985 presso l'Università degli Studi di Palermo. Iscritto all'Ordine degli Ingegneri di Messina al n. 1238. Consigliere dell'Ordine degli Ingegneri di Messina (1993–2000 e 2013–2017), Amministratore Delegato di ATO ME 3 S.p.A. (2002–2006), Consulente tecnico-scientifico dell'Assemblea Regionale Siciliana (2013–2017). Oltre 40 anni di attività libero professionale nel settore pubblico e privato.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,16 +172,16 @@
                 <!-- Salvatore Vancheri -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="img/salvatore_vanchieri.png" class="card-img-top" alt="Ing. Salvatore Vancheri" style="height:260px;object-fit:cover;">
+                        <img src="photo/salvatore_vancheri.jpg" class="card-img-top" alt="Ing. Salvatore Vancheri" style="width:100%;aspect-ratio:1/1;object-fit:cover;">
                         <div class="card-body text-center p-4">
                             <h4 class="mt-2 mb-1">Ing. Salvatore Vancheri</h4>
                             <p class="text-primary mb-3"><strong>Ingegnere Civile Edile — Socio</strong></p>
-                            <p class="text-muted small mb-3">Laureato in Ingegneria Civile Edile a Messina nel 1998.
-                                Libero professionista dal 1998, consulente tecnico per istituti bancari, imprese di
-                                costruzioni e aziende commerciali. Iscritto all'Albo n.2232.</p>
-                            <a href="docs/cv/salvatore_vancheri.pdf" class="btn btn-outline-primary btn-sm" download>
-                                <i class="fa fa-download me-2"></i>Scarica CV completo
-                            </a>
+                            <button class="btn btn-outline-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#bio-salvatore" aria-expanded="false">
+                                <i class="fa fa-user me-2"></i>Curriculum
+                            </button>
+                            <div class="collapse text-start mt-2" id="bio-salvatore">
+                                <p class="text-muted small">Nato a Messina nel 1972, laureato in Ingegneria Civile Edile nel 1998 presso l'Università degli Studi di Messina. Iscritto all'Ordine degli Ingegneri di Messina al n. 2232. Libero professionista dal 1998, consulente tecnico di istituti bancari, imprese di costruzioni e aziende commerciali.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,16 +189,16 @@
                 <!-- Andrea Taranto -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="img/andrea_taranto.png" class="card-img-top" alt="Arch. Andrea Taranto" style="height:260px;object-fit:cover;">
+                        <img src="photo/andrea_taranto.jpg" class="card-img-top" alt="Arch. Andrea Taranto" style="width:100%;aspect-ratio:1/1;object-fit:cover;">
                         <div class="card-body text-center p-4">
                             <h4 class="mt-2 mb-1">Arch. Andrea Taranto</h4>
                             <p class="text-primary mb-3"><strong>Architetto — Restauro e Design d'Interni</strong></p>
-                            <p class="text-muted small mb-3">Laureato in Architettura a Reggio Calabria nel 2015.
-                                Specializzato in restauro conservativo e design di interni per residenze e locali
-                                commerciali. Già Consigliere dell'Ordine degli Architetti di Messina. Iscritto all'Albo n.2230.</p>
-                            <a href="docs/cv/andrea_taranto.pdf" class="btn btn-outline-primary btn-sm" download>
-                                <i class="fa fa-download me-2"></i>Scarica CV completo
-                            </a>
+                            <button class="btn btn-outline-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#bio-andrea" aria-expanded="false">
+                                <i class="fa fa-user me-2"></i>Curriculum
+                            </button>
+                            <div class="collapse text-start mt-2" id="bio-andrea">
+                                <p class="text-muted small">Nato a Messina nel 1987, laureato in Architettura nel 2015 presso l'Università degli Studi Mediterranea di Reggio Calabria. Iscritto all'Ordine degli Architetti P.P.C. di Messina al n. 2230 dal 19 luglio 2016. Consigliere dell'Ordine degli Architetti di Messina (2021–2025). Specializzato in restauro conservativo, interior design di spazi residenziali e commerciali, relazioni paesaggistiche.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,66 +211,58 @@
             <div class="row g-3 justify-content-center">
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/alessio_sturniolo.jpg" alt="Geom. Alessio Sturniolo" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/alessio_sturniolo.jpg" data-name="Geom. Alessio Sturniolo" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">Geom. Alessio Sturniolo</h5>
-                        <small class="text-primary d-block mb-2">Progettazione CAD e Rilievi</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Progettazione CAD, Contabilità Lavori, Rilievi</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/domenico_puleo.jpg" alt="Geom. Domenico Puleio" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/domenico_puleo.jpg" data-name="Geom. Domenico Puleio" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">Geom. Domenico Puleio</h5>
-                        <small class="text-primary d-block mb-2">Geometra</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Progettazione CAD e Design</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/francesco_venuto.jpg" alt="Ing. Francesco Venuto" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/francesco_venuto.jpg" data-name="Ing. Francesco Venuto" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">Ing. Francesco Venuto</h5>
-                        <small class="text-primary d-block mb-2">Ingegnere</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Progettazione Strutturale, Efficientamento Energetico, Impianti</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/fabrizio_cacciola.jpg" alt="Arch. Fabrizio Cacciola" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/fabrizio_cacciola.jpg" data-name="Arch. Fabrizio Cacciola" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">Arch. Fabrizio Cacciola</h5>
-                        <small class="text-primary d-block mb-2">Architetto</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Restauro, Interior Design — Residenze e Locali Commerciali</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/giuseppe_denaro.jpg" alt="P.E. Giuseppe Denaro" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/giuseppe_denaro.jpg" data-name="P.E. Giuseppe Denaro" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">P.E. Giuseppe Denaro</h5>
-                        <small class="text-primary d-block mb-2">Perito</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Progettazione CAD, Computi Metrici, Contabilità Lavori</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/cristina_lanteri.jpg" alt="Arch. Cristina Lanteri" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/cristina_lanteri.jpg" data-name="Arch. Cristina Lanteri" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">Arch. Cristina Lanteri</h5>
-                        <small class="text-primary d-block mb-2">Architetta</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Restauro, Interior Design — Residenze e Locali Commerciali</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="bg-light text-center p-4 h-100">
                         <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
                         <h5 class="mb-1">Ing. Francesca Ranieri</h5>
-                        <small class="text-primary d-block mb-2">Ingegnere</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Ingegnere Civile Edile</small>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="bg-light text-center p-4 h-100">
-                        <i class="fa fa-user-circle text-primary fa-3x mb-3"></i>
+                        <img src="photo/francesco_mondo.jpg" alt="Geom. Francesco Mondo" class="rounded-circle mb-3 team-thumb" data-bs-toggle="modal" data-bs-target="#photoModal" data-full="photo/francesco_mondo.jpg" data-name="Geom. Francesco Mondo" style="width:100px;height:100px;object-fit:cover;cursor:pointer;">
                         <h5 class="mb-1">Geom. Francesco Mondo</h5>
-                        <small class="text-primary d-block mb-2">Geometra</small>
-                        <small class="text-muted">CV in aggiornamento</small>
+                        <small class="text-primary d-block mb-2">Rilievi e Procedure Catastali</small>
                     </div>
                 </div>
             </div>
@@ -331,6 +327,20 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!-- Photo Lightbox Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 bg-transparent shadow-none">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title text-white" id="photoModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+                </div>
+                <div class="modal-body text-center p-2">
+                    <img id="photoModalImg" src="" alt="" class="img-fluid rounded shadow" style="max-height:80vh;object-fit:contain;">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -346,6 +356,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+    var photoModal = document.getElementById('photoModal');
+    photoModal.addEventListener('show.bs.modal', function(e) {
+        var img = e.relatedTarget;
+        document.getElementById('photoModalImg').src = img.getAttribute('data-full');
+        document.getElementById('photoModalImg').alt = img.getAttribute('data-name');
+        document.getElementById('photoModalLabel').textContent = img.getAttribute('data-name');
+    });
+    </script>
 </body>
 
 </html>
