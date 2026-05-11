@@ -6,7 +6,11 @@
       "Bash(cmd *)",
       "PowerShell(claude plugin *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"c:\\\\Users\\\\rosar\\\\Documents\\\\GitHub\\\\engineer_website\\\\Presentazione studio-1.pdf\"\\); $text = [System.Text.Encoding]::Latin1.GetString\\($bytes\\); $strings = [regex]::Matches\\($text, '[\\\\x20-\\\\x7E\\\\xC0-\\\\xFF]{6,}'\\) | ForEach-Object { $_.Value } | Where-Object { $_ -match '[aeiouàèìòù]' } | Select-Object -Unique; $strings | Select-Object -First 200)",
+      "PowerShell($enc = [System.Text.Encoding]::GetEncoding\\(\"iso-8859-1\"\\); $bytes = [System.IO.File]::ReadAllBytes\\(\"c:\\\\Users\\\\rosar\\\\Documents\\\\GitHub\\\\engineer_website\\\\Presentazione studio-1.pdf\"\\); $text = $enc.GetString\\($bytes\\); $strings = [regex]::Matches\\($text, '[\\\\x20-\\\\x7E]{6,}'\\) | ForEach-Object { $_.Value } | Where-Object { $_ -match '[aeiou]' } | Select-Object -Unique; $strings | Select-Object -First 300)",
+      "Bash(git push *)",
+      "Bash(python -c ' *)"
     ]
   }
 }
