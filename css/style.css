@@ -585,3 +585,32 @@ h6,
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+/*** Footer: icone e link → bianco ***/
+.footer .text-primary {
+    color: #FFFFFF !important;
+}
+
+.footer .btn.btn-link::before {
+    color: #FFFFFF !important;
+}
+
+.footer .btn.btn-link:hover {
+    color: #FFFFFF !important;
+}
+
+.footer .btn-outline-body {
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+.footer .btn-outline-body:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #FFFFFF !important;
+}
+
+/*** Breadcrumb active item → bianco ***/
+.page-header .breadcrumb-item.text-primary,
+.breadcrumb-item.text-primary {
+    color: #FFFFFF !important;
+}
