@@ -91,6 +91,28 @@
         dotsData: true,
     });
 
-    
-})(jQuery);
+    // Cookie Consent Banner
+    if (!localStorage.getItem('cookieConsent')) {
+        var bannerHTML = `
+            <div id="cookie-consent-banner">
+                <p>Utilizziamo esclusivamente cookie tecnici per garantire il corretto funzionamento del sito. Non effettuiamo profilazione. Puoi accettare o rifiutare l'utilizzo dei cookie.</p>
+                <div class="btn-container">
+                    <button id="btn-accept-cookie" class="btn btn-primary btn-sm">Accetta</button>
+                    <button id="btn-reject-cookie" class="btn btn-secondary btn-sm" style="background-color:#555; color:#fff; border:none;">Rifiuta</button>
+                </div>
+            </div>
+        `;
+        $('body').append(bannerHTML);
 
+        $('#btn-accept-cookie').click(function () {
+            localStorage.setItem('cookieConsent', 'accepted');
+            $('#cookie-consent-banner').fadeOut('fast', function() { $(this).remove(); });
+        });
+
+        $('#btn-reject-cookie').click(function () {
+            localStorage.setItem('cookieConsent', 'rejected');
+            $('#cookie-consent-banner').fadeOut('fast', function() { $(this).remove(); });
+        });
+    }
+
+})(jQuery);

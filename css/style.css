@@ -621,3 +621,41 @@ h6,
 .breadcrumb-item.text-primary {
     color: #FFFFFF !important;
 }
+
+/*** Cookie Consent Banner ***/
+#cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 15px 20px;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#cookie-consent-banner p {
+    margin: 0;
+    font-size: 14px;
+    flex: 1 1 60%;
+}
+
+#cookie-consent-banner .btn-container {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    #cookie-consent-banner .btn-container {
+        margin-top: 0;
+    }
+}
