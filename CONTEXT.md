@@ -161,7 +161,7 @@
    | Nome | Ruolo specifico |
    |------|----------------|
    | Geom. Alessio Sturniolo | Progettazione CAD, Contabilità Lavori, Rilievi |
-   | Geom. Domenico Puleio | Progettazione CAD e Design |
+   | Geom. Domenico Puleo | Progettazione CAD e Design |
    | Ing. Francesco Venuto | Progettazione Strutturale, Efficientamento Energetico, Impianti |
    | Arch. Fabrizio Cacciola | Restauro, Interior Design — Residenze e Locali Commerciali |
    | P.E. Giuseppe Denaro | Progettazione CAD, Computi Metrici, Contabilità Lavori |
@@ -332,7 +332,7 @@
 | `photo/salvatore_vancheri.jpg` | Ing. Salvatore Vancheri | `index.html` + `about.html` |
 | `photo/andrea_taranto.jpg` | Arch. Andrea Taranto | `index.html` + `about.html` |
 | `photo/alessio_sturniolo.jpg` | Geom. Alessio Sturniolo | `about.html` (collaboratori, cerchio 100px) |
-| `photo/domenico_puleo.jpg` | Geom. Domenico Puleio | `about.html` (collaboratori) |
+| `photo/domenico_puleo.jpg` | Geom. Domenico Puleo | `about.html` (collaboratori) |
 | `photo/francesco_venuto.jpg` | Ing. Francesco Venuto | `about.html` (collaboratori) |
 | `photo/fabrizio_cacciola.jpg` | Arch. Fabrizio Cacciola | `about.html` (collaboratori) |
 | `photo/giuseppe_denaro.jpg` | P.E. Giuseppe Denaro | `about.html` (collaboratori) |
