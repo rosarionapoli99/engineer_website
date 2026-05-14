@@ -365,6 +365,10 @@ h6,
 .service-item .service-text {
     background: var(--light);
     transition: .5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .service-item:hover .service-text {
@@ -658,4 +662,4 @@ h6,
     #cookie-consent-banner .btn-container {
         margin-top: 0;
     }
-}
+}
