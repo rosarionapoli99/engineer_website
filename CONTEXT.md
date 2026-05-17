@@ -191,7 +191,7 @@
    | Consulenze Tecniche | Perizie asseverate/giurate, CTU Tribunali, consulenza di parte, perizie immobiliari stima |
 
 4. **Settori di intervento** (8 badge)  
-   Residenziale e Rurale / Ospedaliero e Sanitario / Commerciale / Scolastico / Alberghiero e Ristorazione / Militare / Chiese e Cimiteri / Opere Stradali e Urbanizzazione
+   Residenziale e Rurale / Ospedaliero e Sanitario / Commerciale / Scolastico / Alberghiero e Ristorazione / Militare / Chiese e centri di accoglienza / Opere Stradali e Urbanizzazione
 
 ---
 
