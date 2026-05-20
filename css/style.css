@@ -17,10 +17,6 @@ body {
     font-family: 'Technic Regular', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-p {
-    text-align: justify;
-}
-
 /* Bootstrap primary color overrides */
 .btn-primary {
     background-color: #990202 !important;
