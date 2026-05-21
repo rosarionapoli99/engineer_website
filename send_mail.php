@@ -36,7 +36,7 @@ $email_body .= "Email:   $email\n";
 $email_body .= "Oggetto: $subject\n\n";
 $email_body .= "Messaggio:\n$message\n";
 
-$headers  = "From: noreply@studio-taranto-vancheri.it\r\n";
+$headers  = "From: noreply@studiotarantovancheri.it\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
