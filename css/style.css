@@ -246,6 +246,14 @@ h6,
         font-size: 2.5rem !important;
         white-space: normal !important;
     }
+
+    .contact-email {
+        font-size: 25px !important;
+    }
+}
+
+.contact-email {
+    font-size: 18px;
 }
 
 .header-carousel .owl-dots {
