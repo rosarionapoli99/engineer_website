@@ -7,7 +7,7 @@ if (!empty($_POST['website'])) {
     exit;
 }
 
-$to = 'rosarionapoli99@gmail.com';
+$to = 'info@studiotarantovancheri.it';
 
 $name    = htmlspecialchars(strip_tags(trim($_POST['name']    ?? '')));
 $email   = filter_var(trim($_POST['email']   ?? ''), FILTER_SANITIZE_EMAIL);
